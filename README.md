@@ -46,12 +46,12 @@ you will just replace my functions with yours
 		but if the user enters 54578,how i convert it to valuable data to make operations on it? 
 		this is done using a simple math trick:
     		1- storing the keypad inputs in MyArr for instance
-    		2- then taking the last element MYArr[len-1] + MyArr[len-2]*10 + ...+MyArr[len-i]*PowerOf(10,i)
+    		2- then taking the last element MYArr[len-1] + MyArr[len-2]*10 +..+MyArr[len-i]*PowerOf(10,i)
     		= Valuable Number to use( it's deciaml number of base 10 ;) )
     
-	-When the application starts, i stored all the inputs coming from the user inside an array using GetData();
-		then i analyze it using Analyze() and seperate the operands in another array and the operations 
-		as well.
+	-When the application starts, i stored all the inputs coming from the user inside an array
+	   using GetData();then i analyze it using Analyze() and seperate the operands in another 
+	   array and the operations as well.
 
 	-then i do the required operation in calculate();then display if the input is valid.
 
