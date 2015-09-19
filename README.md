@@ -15,7 +15,7 @@ video: https://goo.gl/0wEWUq
   		/*the number of operands can be set before compilation in 
   		calculator_blocks.h in (MaxNumberOfOperands) macro*/
 	3-Only can handle two different math operations like 2*3+10 with priority.
-	4-detecting the user mistyping and throw exception .
+	4-Almost detecting the user mistyping and throw exception .
 
 # Project files
 	std_types.h /*Contains new types of standards data types*/
