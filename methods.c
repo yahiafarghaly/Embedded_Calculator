@@ -1,3 +1,5 @@
+these two function should be added to your projects files
+
 /************************************************************************/
 /*               LCD_Signed_Int64_ToString   (should be included into your lcd.c)                                  */
 /************************************************************************/
