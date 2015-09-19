@@ -53,11 +53,11 @@ you will just replace my functions with yours
 	-then i do the required operation in calculate();then display if the input is valid.
 
 	- Higher range number(greater than signed 32bits) weather inputs or a result won't display 
-	- on the LCD correctly due to the limiation in itoa.c standard function, so i modifiy it :) .
+	   on the LCD correctly due to the limiation in itoa.c standard function, so i modifiy it :) .
 
 # Problem to be fixed
-    1- it cannot do more than two different math operation in the same line.
-    2-An optimized way to do the two different math operation.
+    1-it cannot do more than two different math operation in the same line.
+    2-Need an optimized way to do the two different math operation.
     3-Unhandle exception to if the result is out of range.(just show the wrong answer)
     
     
