@@ -10,13 +10,15 @@ A simple calculator which can perform Signed operations on 64bits numbers with m
 # Functionalities
 	1-Can perform (+,-,/,*) operations whether signed or unsigned.
 	2- Generic number of operands with only one math operation like (2*2*2*5*..)
-  		/*the number of operands can be set before compilation in calculator_blocks.h in (MaxNumberOfOperands) macro*/
+  		/*the number of operands can be set before compilation in 
+  		calculator_blocks.h in (MaxNumberOfOperands) macro*/
 	3-Only can handle two different math operations like 2*3+10 with priority.
 	4-detecting the user mistyping and throw exception .
 
 # Project files
 	std_types.h /*Contains new types of standards data types*/
-	calculator_blocks.h /*Contains the configuarion you set to how much the calculator can handle number of operands,operation*/
+	calculator_blocks.h /*Contains the configuarion you set to how 
+		much the calculator can handle number of operands,operation*/
 	calculator_blocks.c /*Contains the main work of the calculator as will be explain later*/
 	Calculator.c /*the main of the application*/
 	LCD_Signed_Int64_ToString function /*the problem is explained below*/
@@ -28,8 +30,8 @@ you will just replace my functions with yours
 	-LCD_displayString(uint8* msg);
 	
 #The main Workflow of the program
-/*this is just a general explaintion of what you will see in the code but the code is already commented when needed tp be
-able to trace it*/
+	/*this is just a general explaintion of what you will see in the code
+		but the code is already commented when needed to be able to trace it*/
 
 	-calculator.c contains globel flag which can contain state of the operations inside the code in enum var as defined in
   		calculator_blocks.h: enum StageFlag{Reset,StartPoint,AnalyzePoint,CalculatePoint,DisplayPoint,ErrorPoint};
