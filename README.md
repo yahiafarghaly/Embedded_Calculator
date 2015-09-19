@@ -1,7 +1,7 @@
 # Embedded_Calculator
 A simple calculator which can perform Signed operations on 64bits numbers with max of two different math symbols or any number of operands but with the same math symbol.
 
-video: https://goo.gl/0wEWUq
+Last video with sign operand added: https://goo.gl/0wEWUq
 
 # Consist of
 	1- 4 * 4 keypad interface.
@@ -50,7 +50,8 @@ you will just replace my functions with yours
     		= Valuable Number to use( it's deciaml number of base 10 ;) )
     
 	-When the application starts, i stored all the inputs coming from the user inside an array using GetData();
-		then i analyze it using Analyze() and seperate the operands in another array and the operations as well.
+		then i analyze it using Analyze() and seperate the operands in another array and the operations 
+		as well.
 
 	-then i do the required operation in calculate();then display if the input is valid.
 
