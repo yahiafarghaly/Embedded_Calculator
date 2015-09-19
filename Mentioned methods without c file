@@ -1,0 +1,53 @@
+/************************************************************************/
+/*               LCD_Signed_Int64_ToString   (should be included into your lcd.c)                                  */
+/************************************************************************/
+
+static uint8 Signed_Int64_ToASCI(sint64 num, uint8* str, uint8 len, uint8 base)
+{
+	sint64 sum = num;
+	uint8 i = 0;
+	uint8 digit;
+	uint8 Negative=0;
+	
+	if(sum < 0){
+		sum=-sum;
+		Negative=1;
+	}
+	
+	do
+	{
+		digit = sum % base;
+		if (digit < 0xA)
+			str[i++] = '0' + digit;
+		else
+			str[i++] = 'A' + digit - 0xA;
+		sum /= base;
+	}while (sum > 0);
+
+	if(Negative) str[i]='-';
+	++i;
+	str[i] = '\0';
+	strrev(str);
+	return 0;
+}
+
+
+void LCD_Signed_Int64_ToString(sint64 data)
+{
+	char buf[16]={0};
+	Signed_Int64_ToASCI(data,buf,16,10);
+	LCD_displayString(buf);
+}
+
+
+
+/************************************************************************/
+/*               PowerOf                                    */
+/************************************************************************/
+uint32 powerOf(uint8 x,uint8 y)
+{
+	uint32 val=1,index=0;
+	for(index=1;index<=y;index++)
+	val*=x;
+	return val;
+}
