@@ -1,11 +1,13 @@
 # Embedded_Calculator
 A simple calculator which can perform Signed operations on 64bits numbers with max of two different math symbols or any number of operands but with the same math symbol.
 
+video: https://goo.gl/0wEWUq
+
 # Consist of
 	1- 4 * 4 keypad interface.
 	2-16*2 LM016L LCD interface.
 	3-Avr Atmega 32l.
-	4-Atmel studio and proteus tool for simulation.
+	4-Atmel studio and proteus 7.7 tool for simulation.
 
 # Functionalities
 	1-Can perform (+,-,/,*) operations whether signed or unsigned.
@@ -55,7 +57,7 @@ you will just replace my functions with yours
 	- Higher range number(greater than signed 32bits) weather inputs or a result won't display 
 	   on the LCD correctly due to the limiation in itoa.c standard function, so i modifiy it :) .
 
-# Problem to be fixed
+# Problems to be fixed
     1-it cannot do more than two different math operation in the same line.
     2-Need an optimized way to do the two different math operation.
     3-Unhandle exception to if the result is out of range.(just show the wrong answer)
