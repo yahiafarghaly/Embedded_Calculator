@@ -34,7 +34,7 @@ you will just replace my functions with yours
 	/*this is just a general explaintion of what you will see in the code
 		but the code is already commented when needed to be able to trace it*/
 
-	-calculator.c contains globel flag which can contain state of the operations inside the code
+	-calculator.c contains globel flag which can contain state of the program flow inside the code
 		in enum var as defined in calculator_blocks.h: 
 		enum StageFlag{Reset,StartPoint,AnalyzePoint,CalculatePoint,DisplayPoint,ErrorPoint};
   		and by that i cannot move to the next stage until i complete the previous stage correctly 
