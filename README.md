@@ -23,7 +23,7 @@ Last video with sign operand added: https://goo.gl/0wEWUq
 		much the calculator can handle number of operands,operation*/
 	calculator_blocks.c /*Contains the main work of the calculator as will be explain later*/
 	Calculator.c /*the main of the application*/
-	LCD_Signed_Int64_ToString function /*the problem is explained below*/
+	 
 
 lcd and keypad drivers i don't include it here as you may want to use your own library
 you will just replace my functions with yours
@@ -56,7 +56,8 @@ you will just replace my functions with yours
 	-then i do the required operation in calculate();then display if the input is valid.
 
 	- Higher range number(greater than signed 32bits) weather inputs or a result won't display 
-	   on the LCD correctly due to the limiation in itoa.c standard function, so i modifiy it :) .
+	   on the LCD correctly due to the limiation in itoa.c standard function, so i modifiy it 
+	   to LCD_Signed_Int64_ToString function :) .
 
 # Problems to be fixed
     1-it cannot do more than two different math operation in the same line.
