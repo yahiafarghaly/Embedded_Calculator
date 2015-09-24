@@ -3,7 +3,7 @@ A simple calculator which can perform Signed operations on 64bits numbers with m
 
 Last video with sign operand added: https://goo.gl/0wEWUq
 
-# Consist of
+# Consists of
 	1- 4 * 4 keypad interface.
 	2-16*2 LM016L LCD interface.
 	3-Avr Atmega 32l.
@@ -17,15 +17,18 @@ Last video with sign operand added: https://goo.gl/0wEWUq
 	3-Only can handle two different math operations like 2*3+10 with priority.
 	4-Almost detecting the user mistyping and throw exception .
 
-# Project files
+# Simple description of the Project files
 	std_types.h /*Contains new types of standards data types*/
 	calculator_blocks.h /*Contains the configuarion you set to how 
 		much the calculator can handle number of operands,operation*/
 	calculator_blocks.c /*Contains the main work of the calculator as will be explain later*/
 	Calculator.c /*the main of the application*/
+	lcd.c/keypad.c /* normal c drivers*/
+	calculatorVx.DSN /*Simulation file using proteus 7.7*/
+	
 	 
 
-lcd and keypad drivers i don't include it here as you may want to use your own library
+you may want to use your own library for LCD and Keypad
 you will just replace my functions with yours
 #
 	-uint8 KeyPad_getPressedKey();
