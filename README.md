@@ -64,11 +64,5 @@ you will just replace my functions with yours
 	   to LCD_Signed_Int64_ToString function :) .
 
 # Problems to be fixed
-    1-it cannot do more than two different math operation in the same line.
-    2-Need an optimized way to do the two different math operation.
-    3-Unhandle exception if the result is out of range.(just show the wrong answer)
-    
-    
-    
-    
-    
+    1-Overflow check
+    2-Keypad waits for 300ms after each reading
